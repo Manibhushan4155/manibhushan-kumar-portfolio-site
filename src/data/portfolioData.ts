@@ -29,15 +29,15 @@ export interface CertificationItem {
 
 export const PERSONAL_INFO = {
   name: "Manibhushan Kumar",
-  title: "CSE (AI & Data Science) Student",
+  title: "Aspiring AI and Data Science enthusiast",
   educationSubtitle: "B.Tech CSE (AI & Data Science)",
   institution: "Poornima College of Engineering, Jaipur",
-  expectedYear: "Expected 2027",
+  expectedYear: "Pursuing, expected 2027",
   email: "bhushanmani2205@gmail.com",
   phone: "+91 6206264155",
   linkedIn: "https://www.linkedin.com/in/manibhushan-kumar-299a6739a",
   about:
-    "Driven CSE (AI & Data Science) student interested in applying data analysis and market analytics to practical finance problems. I build Python-based analytics, forecasting, and computer-vision projects, and am seeking an opportunity to contribute to data-driven work.",
+    "Aspiring AI and Data Science enthusiast seeking to apply technical skills to real-world problem solving and contribute to AI-driven projects.",
 };
 
 // The current resume does not list employment or internships.
@@ -90,7 +90,7 @@ export const PROJECTS: ProjectItem[] = [
 ];
 
 export const SKILLS: string[] = [
-  "Full-Stack Development",
+  "Full Stack Developer",
   "Python for Data Science",
   "DSA with Java",
   "JavaScript",
@@ -99,6 +99,8 @@ export const SKILLS: string[] = [
   "Data Analysis",
   "Computer Vision",
   "DBMS",
+  "English",
+  "Hindi",
 ];
 
 export const EDUCATION_LIST: EducationItem[] = [
