@@ -29,123 +29,75 @@ export interface CertificationItem {
 
 export const PERSONAL_INFO = {
   name: "Manibhushan Kumar",
-  title: "Aspiring AI and Data Science enthusiast",
+  title: "CSE (AI & Data Science) Student",
   educationSubtitle: "B.Tech CSE (AI & Data Science)",
   institution: "Poornima College of Engineering, Jaipur",
-  expectedYear: "expected 2027",
+  expectedYear: "Expected 2027",
   email: "bhushanmani2205@gmail.com",
   phone: "+91 6206264155",
   linkedIn: "https://www.linkedin.com/in/manibhushan-kumar-299a6739a",
   about:
-    "Aspiring AI and Data Science enthusiast with practical experience in Python, Machine Learning, and Generative AI, seeking to apply technical skills to real-world problem solving and contribute to AI-driven projects.",
+    "Driven CSE (AI & Data Science) student interested in applying data analysis and market analytics to practical finance problems. I build Python-based analytics, forecasting, and computer-vision projects, and am seeking an opportunity to contribute to data-driven work.",
 };
 
-export const EXPERIENCES: ExperienceItem[] = [
-  {
-    role: "Associate Software Intern",
-    company: "SingleTap Software Solution",
-    description:
-      "Developing AI and web-based applications through project-driven learning and practical assignments; solving coding challenges; building hands-on projects using Git-based version control and collaborative workflows; working with mentors on industry-aligned projects.",
-  },
-  {
-    role: "Data Science Intern",
-    company: "Bussibees EdTech Pvt. Ltd.",
-    type: "Summer Internship",
-    duration: "45-day intensive summer internship",
-    description:
-      "Completed a 45-day intensive summer internship focused on data-driven solutions and machine learning workflows. Hands-on with data acquisition, cleaning, exploratory data analysis using Python, AI, statistical modelling, machine learning algorithms, and collaborating with a technical team to develop and validate predictive models.",
-  },
-];
+// The current resume does not list employment or internships.
+export const EXPERIENCES: ExperienceItem[] = [];
 
 export const PROJECTS: ProjectItem[] = [
   {
-    id: "classcapture",
-    title: "ClassCapture — AI Smart Classroom & Live Transcript System",
+    id: "library-management",
+    title: "Library Management System",
     summary:
-      "AI-powered smart classroom platform automating attendance and generating real-time multilingual lecture transcripts and summarized notes.",
+      "A web-based database application that digitizes daily library operations and provides real-time inventory and circulation tracking.",
     problem:
-      "Automating attendance tracking and generating real-time bilingual (Hindi-English) lecture transcripts and summarized notes for accessible learning.",
-    techStack: [
-      "Python",
-      "Flask",
-      "OpenCV",
-      "Face Recognition",
-      "VOSK",
-      "Whisper AI",
-      "HuggingFace Transformers",
-      "PyTorch",
-      "PyAudio",
-    ],
+      "Replace manual paper-based record keeping with an easier way to manage library books, members, issues, returns and availability.",
+    techStack: ["Python", "Streamlit", "SQLite", "SQL", "Datetime", "VS Code", "Git"],
     features: [
-      "Live camera attendance detection",
-      "VOSK/Whisper Hindi-English transcription with language detection",
-      "Transformer-based lecture note summaries",
-      "Flask dashboard for attendance, transcripts, summaries",
-      "Multilingual accessible learning support",
+      "Separate Administrator and Student portals",
+      "Role-based access with isolated Streamlit session state",
+      "Digitized library records and circulation workflows",
+      "Real-time inventory and book availability tracking",
     ],
   },
   {
     id: "sales-forecasting",
     title: "Sales Forecasting for Small Retail Stores",
     summary:
-      "AI-driven retail analytics system using historical sales to forecast revenue, optimize inventory planning, and support decisions.",
+      "An AI-driven retail analytics system that forecasts revenue from historical sales, supports inventory planning and helps guide data-driven decisions.",
     problem:
-      "Using historical sales data to forecast revenue, optimize inventory planning, evaluate discount impact, and identify declining sales or low margins without claiming quantified accuracy or business results.",
-    techStack: [
-      "Python",
-      "Pandas",
-      "NumPy",
-      "Scikit-learn",
-      "Streamlit",
-      "Matplotlib",
-      "Seaborn",
-      "Linear Regression",
-    ],
+      "Help small retailers understand historical sales trends and use forecasts and business KPIs to plan inventory and make informed decisions.",
+    techStack: ["Python", "Pandas", "NumPy", "Scikit-learn", "Streamlit", "Matplotlib", "Seaborn", "Linear Regression"],
     features: [
-      "Linear-regression sales forecasts",
-      "Streamlit KPI dashboard for revenue, profit margin, average order value, category contribution and trends",
-      "Preprocessing, moving averages, trend analysis, discount impact",
-      "Flags declining sales, low margins, and excessive discount dependency with improvement suggestions",
+      "Linear Regression model analyzes historical sales and forecasts future performance",
+      "Interactive dashboard visualizes revenue, profit margin, average order value and category contribution",
+      "Sales trend visualizations support retail planning",
     ],
   },
   {
-    id: "library-management",
-    title: "Library Management System",
+    id: "classcapture",
+    title: "ClassCapture — AI Smart Classroom & Live Transcript System",
     summary:
-      "Web-based application digitizing library operations with real-time inventory and circulation tracking.",
+      "An AI-powered classroom platform for automated attendance and real-time multilingual lecture transcripts with summarized notes.",
     problem:
-      "Digitizing library operations with real-time inventory and circulation tracking for administrative and student users.",
-    techStack: [
-      "Python",
-      "Streamlit",
-      "SQLite",
-      "SQL",
-      "Datetime",
-      "VS Code",
-      "Git",
-    ],
+      "Support digital learning with automatic attendance and accessible Hindi/English lecture transcripts and summaries.",
+    techStack: ["Python", "Flask", "OpenCV", "Face Recognition", "VOSK", "Whisper AI", "HuggingFace Transformers", "PyTorch", "PyAudio", "MySQL"],
     features: [
-      "Admin and student portals with isolated sessions",
-      "SQLite catalog by title, author, category, ISBN and copy availability",
-      "Issue/return flows tracking copy counts and dates",
-      "Student enrollment login and borrow/due/overdue/history view",
-      "Admin dashboard with catalogue, volumes, active issues and overdue alerts",
+      "Detects and marks attendance from live camera feeds using OpenCV and face recognition",
+      "Converts classroom lectures into real-time Hindi/English transcripts using VOSK and Whisper AI",
+      "Supports language detection and summarized lecture notes",
     ],
   },
 ];
 
 export const SKILLS: string[] = [
-  "Data Structures and Algorithms in C++",
-  "Python",
-  "Machine Learning",
+  "Full-Stack Development",
+  "Python for Data Science",
+  "DSA with Java",
+  "JavaScript",
   "MySQL",
   "Excel",
   "Data Analysis",
-  "NLP",
   "Computer Vision",
-  "NumPy",
-  "Pandas",
-  "Operating Systems",
   "DBMS",
 ];
 
@@ -155,38 +107,21 @@ export const EDUCATION_LIST: EducationItem[] = [
     institution: "Poornima College of Engineering",
     location: "Jaipur",
     year: "Expected 2027",
-    grade: "CGPA 7.15",
+    grade: "Pursuing",
   },
   {
     degree: "Diploma in CSE",
-    institution: "Gyan Vihar School of Engineering & Technology",
+    institution: "Suresh Gyan Vihar University",
     location: "Jaipur",
     year: "2024",
-    grade: "CGPA 7.21",
-  },
-  {
-    degree: "Matriculation",
-    institution: "BSEB",
-    location: "Patna",
-    year: "2021",
-    grade: "75.4%",
+    grade: "7.21",
   },
 ];
 
 export const CERTIFICATIONS_LIST: CertificationItem[] = [
-  {
-    title: "Google Cloud Launchpad",
-  },
-  {
-    title: "Oracle Cloud Infrastructure 2025 Certified Data Science Professional",
-  },
-  {
-    title: "Python for Data Science",
-  },
-  {
-    title: "DSA with Java",
-  },
-  {
-    title: "JavaScript",
-  },
+  { title: "Google Cloud Launchpad" },
+  { title: "Oracle Cloud Infrastructure 2025 Certified Data Science Professional" },
+  { title: "Python for Data Science" },
+  { title: "DSA with Java" },
+  { title: "JavaScript" },
 ];
