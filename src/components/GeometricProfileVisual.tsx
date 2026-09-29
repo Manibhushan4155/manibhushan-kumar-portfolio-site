@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import photoUrl from '../../photo.jpeg';
 
 export const GeometricProfileVisual: React.FC = () => {
   const [activeNode, setActiveNode] = useState<number | null>(null);
@@ -171,30 +172,40 @@ export const GeometricProfileVisual: React.FC = () => {
             );
           })}
 
-          {/* Central Monogram Emblem Hexagon */}
+          {/* Central Portrait Accent Framing Ring */}
           <g transform="translate(200, 200)">
-            {/* Rotating central ring */}
             <circle
               cx="0"
               cy="0"
-              r="38"
-              fill="#0F172A"
+              r="46"
+              fill="none"
               stroke="url(#gradPrimary)"
               strokeWidth="1.5"
-              className="shadow-lg"
+              strokeDasharray="4 4"
+              className="animate-orbit origin-center opacity-70"
             />
-            {/* Core stylized MK monogram */}
-            <text
-              x="0"
-              y="6"
-              textAnchor="middle"
-              className="text-lg font-bold tracking-wider font-mono fill-white pointer-events-none"
-              style={{ fontSize: "17px", fontWeight: 700 }}
-            >
-              MK
-            </text>
           </g>
         </svg>
+
+        {/* Central Portrait Image with Subtle Frame & Precise Centering */}
+        <div
+          className="absolute inset-0 flex items-center justify-center pointer-events-none transition-transform duration-700 ease-out"
+          style={{
+            transform: isHovered ? "scale(1.02)" : "scale(1)",
+          }}
+        >
+          <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full p-[2.5px] bg-gradient-to-tr from-blue-500 via-indigo-500 to-violet-500 shadow-xl shadow-blue-500/25 ring-2 ring-slate-900 pointer-events-auto">
+            <div className="w-full h-full rounded-full overflow-hidden bg-slate-950">
+              <img
+                src={photoUrl}
+                alt="Manibhushan Kumar - Aspiring AI and Data Science Enthusiast"
+                className="w-full h-full object-cover object-center"
+                style={{ objectFit: 'cover', objectPosition: 'center' }}
+                loading="eager"
+              />
+            </div>
+          </div>
+        </div>
 
         {/* Hover inspection pill (clean contextual info) */}
         <div className="absolute bottom-7 left-1/2 -translate-x-1/2 text-center pointer-events-none transition-all duration-300">
